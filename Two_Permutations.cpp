@@ -1,27 +1,21 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
-int main(){
+int main() {
     int t;
-    cin>>t;
-    while(t--){
+    cin >> t;
+    while (t--){
         int n, a, b;
-        cin>>n>>a>>b;
-
-        if(n == 1){
+        cin >> n >> a >> b;
+        
+        if(a == n && b == n){
             cout<<"Yes"<<endl;
-            continue;
+        } 
+        else if(a + b <= n - 2){
+            cout<<"Yes"<<endl;
+        } 
+        else {
+            cout << "No\n";
         }
-        if(n == 2){
-            if(a!=2 || b!=2) cout<<"No"<<endl;
-            else cout<<"Yes"<<endl;
-            continue;
-        }
-
-        if(a + b >= n-1){
-            cout<<"No"<<endl;
-            continue;
-        }
-        cout<<"Yes"<<endl;
     }
     return 0;
 }
