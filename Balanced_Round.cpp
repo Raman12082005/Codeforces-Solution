@@ -29,7 +29,7 @@ int main() {
             }
         }
         ans = max(ans, curr);
-        cout<<ans<<endl;
+        cout<<n-ans<<endl;
     }
 
     return 0;
